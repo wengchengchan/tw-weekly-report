@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>台股週報 2026-04-24</title>
+  <style>
+    :root {
+      --bg: #0f1117; --surface: #1a1d27; --border: #2a2d3a;
+      --accent: #4f8ef7; --green: #26c281; --red: #e05c5c;
+      --yellow: #f0c040; --text: #d4d8e8; --muted: #7a7f9a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.8; }
+    .disclaimer {
+      background: #1e1a10; border-left: 3px solid var(--yellow);
+      padding: 0.6rem 1.2rem; font-size: 0.78rem; color: var(--yellow); text-align: center;
+    }
+    nav { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0.8rem 2rem; font-size: 0.85rem; }
+    nav a { color: var(--accent); }
+    .container { max-width: 860px; margin: 0 auto; padding: 2rem 1.5rem; }
+    h1 { font-size: 1.6rem; color: var(--accent); margin-bottom: 0.5rem; }
+    h2 { font-size: 1.15rem; color: var(--accent); margin: 2rem 0 0.8rem; border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; }
+    h3 { font-size: 1rem; color: var(--text); margin: 1.2rem 0 0.5rem; }
+    h4 { font-size: 0.9rem; color: var(--muted); margin: 1rem 0 0.4rem; }
+    p { margin-bottom: 0.8rem; }
+    ul, ol { margin: 0.5rem 0 0.8rem 1.5rem; }
+    li { margin-bottom: 0.3rem; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.88rem; }
+    th { background: var(--surface); border: 1px solid var(--border); padding: 0.5rem 0.8rem; color: var(--muted); text-align: left; }
+    td { border: 1px solid var(--border); padding: 0.5rem 0.8rem; }
+    tr:nth-child(even) { background: #14161f; }
+    code { background: var(--surface); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.85em; color: var(--green); }
+    pre { background: var(--surface); border: 1px solid var(--border); padding: 1rem; border-radius: 6px; overflow-x: auto; margin: 1rem 0; }
+    blockquote { border-left: 3px solid var(--accent); padding: 0.5rem 1rem; color: var(--muted); margin: 1rem 0; }
+    hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+    footer { text-align: center; padding: 2rem; font-size: 0.75rem; color: var(--muted); border-top: 1px solid var(--border); margin-top: 3rem; }
+  </style>
+</head>
+<body>
+  <div class="disclaimer">⚠️ 本週報為個人研究紀錄，非投資建議，不構成任何買賣依據。投資有風險，請自行判斷。</div>
+  <nav><a href="../index.html">← 所有週報</a></nav>
+  <div class="container">
+    <h1>Section -1｜上週績效回顧</h1>
+<br>
+<h3>回顧摘要</h3>
+<ul>
+<li>上週週報日期：2026-04-18</li>
+<li>回顧區間：2026-04-18 收盤 → 2026-04-24 收盤</li>
+<li>A級平均報酬：N/A（上週 final A 級 0 檔）</li>
+<li>A級勝率：N/A（上週 final A 級 0 檔）</li>
+<li>B級平均報酬：+11.32%（以上週 B+ / B 觀察名單合併計算）</li>
+<li>B級勝率：87.5%</li>
+<li>最佳標的：3017 奇鋐，收盤報酬 +21.67%；液冷 / AI cooling 主線延續且資金追價意願極強</li>
+<li>最差標的：2382 廣達，收盤報酬 -1.24%；雖有 AI server 基本面，但本週資金明顯偏好更高 beta 的散熱 / 機殼 / 電源 / 高價 ODM</li>
+<li>哪些主線判斷正確：AI GPU / ASIC / Networking、AI Software / Cloud Capex → 台股 ODM / 網通 / 散熱、Datacenter Power 三條主線都成立</li>
+<li>哪些地方需要修正：上週對「過熱不能追」的判斷是對的，但 B 級名單中仍有太多高位股；下週需要把 M.E.T.A. 的 pullback 品質放在更前面，減少只靠強勢分數撐起來的候選</li>
+<li>結論：上週方向判斷正確，但真正可執行的 setup 比想像少；<strong>不是 AI 主線錯，而是交易位置更重要</strong></li>
+</ul>
+<br>
+<h3>上週候選績效表</h3>
+<p>| 等級 | 代號 | 名稱 | 上週主線 | 當時策略 | 週一開盤表現 | 週內最高漲幅 | 週內最低跌幅 | 本週收盤報酬 | 結論 |</p>
+<p>|---|---|---|---|---|---:|---:|---:|---:|---|</p>
+<p>| B+ | 3231 | 緯創 | AI server ODM | 拉回買 | +0.37% | +6.96% | -1.10% | +1.83% | 有守區間，但爆發力落後高價股 |</p>
+<p>| B+ | 6669 | 緯穎 | AI server / Cloud | 拉回買 | +4.07% | +19.58% | +1.71% | +19.19% | 成功，基本面與籌碼共振 |</p>
+<p>| B+ | 2382 | 廣達 | AI server ODM | 拉回買 | -0.93% | +6.81% | -1.86% | -1.24% | 主線對、但資金選股偏好不在它身上 |</p>
+<p>| B+ | 8210 | 勤誠 | AI chassis / rack | 拉回買 | +1.96% | +18.63% | -2.75% | +18.63% | 成功，機殼 / rack 映射完全成立 |</p>
+<p>| B | 3324 | 雙鴻 | AI cooling | 觀察 | +0.48% | +17.39% | -2.90% | +16.91% | 轉強速度比預期快 |</p>
+<p>| B+ | 2345 | 智邦 | AI networking | 突破追蹤 | -1.21% | +8.70% | -3.62% | +2.42% | 主線正確，但追價報酬不如預期 |</p>
+<p>| B+ | 3017 | 奇鋐 | AI cooling | 突破追蹤 | +0.42% | +22.71% | -0.21% | +21.67% | 最強主線代表股之一 |</p>
+<p>| B+ | 2308 | 台達電 | Datacenter Power | 突破追蹤 | +1.09% | +14.95% | +1.09% | +11.14% | Power 映射成立，且投信站多方 |</p>
+<br>
+<h3>回顧重點</h3>
+<ul>
+<li>哪些主線真的延續：<strong>AI infra 全面擴散到 ODM / Networking / Cooling / Rack / Power</strong>。</li>
+<li>哪些映射事後證明太弱：General Server 與 Consumer 映射仍偏弱，沒有成為台股本週核心。</li>
+<li>哪些股票雖然很強，但因為不在 M.E.T.A. 區所以不該追：2345 智邦、3017 奇鋐、2308 台達電、6669 緯穎。</li>
+<li>哪些規則下週要更嚴格：A級必須同時滿足 <strong>pullback 品質 + 月線乖離可接受 + 法人未轉空</strong>，不能只因為股價最強就升 A。</li>
+</ul>
+<br>
+<hr>
+<br>
+<h1>Section 0｜本週結論一頁摘要</h1>
+<br>
+<h3>市場狀態</h3>
+<ul>
+<li>美股整體狀態：<strong>偏多震盪，SOX 明顯最強，但大科技進入 earnings 前等待區</strong></li>
+<li>台股整體狀態：<strong>強多，但高檔過熱感比上週更明顯</strong></li>
+<li>核心判斷：<strong>美股主線沒有壞，台股主線更集中，但下週重點不是追最強，而是只做 still actionable 的 pullback / 突破 setup。</strong></li>
+</ul>
+<br>
+<h3>市場燈號</h3>
+<ul>
+<li>燈號：<strong>黃燈</strong></li>
+<li>定義：綠燈＝可積極布局；黃燈＝只做拉回不追價；紅燈＝降倉 / 防守</li>
+<li>本週判斷原因：<strong>S&P 500 與 Nasdaq 仍在上升趨勢，但 VIX 回升至 19.31、台股加權已高於 20MA 約 +9.37%，台股領漲股普遍進入過熱區。</strong></li>
+</ul>
+<br>
+<h3>Top 3 主線卡片</h3>
+<p>| 主線 | 美股代表 | 台股核心股 | 本週一句話 |</p>
+<p>|---|---|---|---|</p>
+<p>| AI GPU / ASIC / High-speed Networking | Nvidia、Broadcom、Marvell、Arista | 智邦、緯穎、台積電 | SOX 週漲 +8.03%，Marvell 單週 +24.14%，AI infra 仍是第一主線 |</p>
+<p>| AI Software / Cloud Capex → ODM / Networking / Cooling | Microsoft、Meta、Amazon、Google | 緯創、廣達、緯穎、奇鋐 | 大科技股價本週不算最強，但 4/30 earnings 前，capex 預期仍是台股 AI 鏈上游驅動 |</p>
+<p>| Datacenter Power / Rack Infrastructure | Eaton、Amphenol、VPG | 台達電、勤誠 | AI server 不只吃 GPU，還吃 power、cooling、rack，台股資金已明確往這一段擴散 |</p>
+<br>
+<h3>下週主軸</h3>
+<p>1. 只保留 <strong>AI infra 延續 + 台股映射清楚 + 位置還能做</strong> 的標的</p>
+<p>2. 以 <strong>3231 緯創 / 2330 台積電 / 2382 廣達</strong> 的 pullback 結構為優先</p>
+<p>3. 對 3017 / 8210 / 2308 / 6669 / 2345 這類強股，<strong>只能等突破或更深整理，不主動追高</strong></p>
+<br>
+<h3>下週操作原則</h3>
+<ul>
+<li>可積極做多：<strong>有條件</strong></li>
+<li>以拉回承接為主或突破追價為主：<strong>以 pullback 為主；突破只能做少數最強股且必須帶量有效</strong></li>
+<li>不宜追價族群：<strong>過熱散熱、高位 rack / power、已遠離 20MA 的高價 ODM / 網通</strong></li>
+<li>依上週績效要調整的規則：<strong>把「位置」權重再拉高；強勢股若距離 M.E.T.A. 區超過 +3%，一律不升 A。</strong></li>
+</ul>
+<br>
+<hr>
+<br>
+<h1>Section 1｜全球市場總覽</h1>
+<br>
+<h3>1.1 美股大盤</h3>
+<ul>
+<li><strong>S&P 500：7108.40，週漲 +0.95%</strong>；仍在 10MA / 20MA / 50MA 之上，屬偏多震盪。</li>
+<li><strong>Nasdaq：24438.50，週漲 +1.39%</strong>；仍強於 S&P 500，但漲勢從全面噴出轉為等待 earnings 驗證。</li>
+<li><strong>SOX：10078.57，週漲 +8.03%</strong>；六大觀察指標中最強，半導體與 AI infra 交易熱度再升溫。</li>
+<li><strong>Russell 2000：2775.10，週漲 +2.04%</strong>；小型股沒有轉弱，代表 risk appetite 尚未明顯收縮。</li>
+</ul>
+<br>
+<h3>1.2 風險因子</h3>
+<ul>
+<li><strong>美國 10Y 殖利率：4.323%</strong>；週變動 +0.32%，利率沒有失控，但也不再像上週那樣明確回落。</li>
+<li><strong>DXY：98.88</strong>；週變動 +0.67%，美元本週偏穩偏強，對風險資產形成一點雜音。</li>
+<li><strong>VIX：19.31</strong>；週變動 +7.64%，還不到 panic，但明顯高於上週，代表市場開始為 earnings 做風險定價。</li>
+<li>市場過熱 / 過冷判斷：<strong>美股不算過熱，但台股已經明顯過熱。</strong></li>
+</ul>
+<br>
+<h3>1.3 台股大盤</h3>
+<ul>
+<li><strong>加權指數：38601.83，週漲 +4.88%</strong></li>
+<li><strong>相對 20MA：+9.37%</strong>；<strong>相對 50MA：+13.07%</strong></li>
+<li><strong>台積電：2155，週漲 +6.16%</strong>；重新接回領漲角色，但指數不是只靠台積電，AI 周邊鏈同步表現。</li>
+<li>台股結論：<strong>趨勢很強，但市場已進入「主線對、位置難」階段；下週必須提高追價門檻。</strong></li>
+</ul>
+<br>
+<h3>1.4 下週關鍵事件</h3>
+<ul>
+<li><strong>4/24：Intel earnings</strong></li>
+<li><strong>4/30：Microsoft / Meta / Amazon / Google earnings</strong></li>
+<li><strong>5/1：Apple earnings</strong></li>
+<li><strong>5/6：AMD earnings</strong></li>
+<li>判讀重點：<strong>若 hyperscaler capex 指引維持偏強，台股 ODM / Networking / Cooling 主線可續抱；若 ROI 論述轉弱，台股高位 AI 鏈會先被獲利了結。</strong></li>
+</ul>
+<br>
+<hr>
+<br>
+<h1>Section 2｜美股主線掃描</h1>
+<br>
+<h3>2.1 本週最強 6 條主線總表</h3>
+<p>| 主線 | 強度 | 延續性 | 驅動因子 | 風險點 |</p>
+<p>|---|---|---|---|---|</p>
+<p>| CPU / General Server | 中 | 中 | AMD 強、企業伺服器需求回溫 | Intel 財報風險、資金關注度不足 |</p>
+<p>| AI GPU / ASIC / High-speed Networking | 高 | 高 | SOX 強、MRVL +24.14%、AVGO / ANET 延續 | 估值與追價風險高 |</p>
+<p>| Memory / Storage | 中高 | 中高 | MU +5.36%，AI memory 緊張仍在 | 若供給預期鬆動，波動會很大 |</p>
+<p>| Passive / Power / Industrial | 中高 | 中高 | ETN / VPG 走強，AI datacenter power 需求持續 | 一般工業景氣仍普通 |</p>
+<p>| AI Software / Cloud Capex | 中 | 高 | 大科技 earnings 前整理，但 capex 預期仍是主驅動 | 4/30 earnings 若對 ROI 保守，台股會受壓 |</p>
+<p>| Consumer / Terminal | 低 | 低 | AAPL 尚可、TSLA 偏弱 | 對台股本週主名單映射價值有限 |</p>
+<br>
+<h3>2.2 美股領頭羊</h3>
+<p>| 股票 | 族群 | 本週表現 | 結構判讀 | 下週看法 |</p>
+<p>|---|---|---|---|---|</p>
+<p>| Nvidia | AI GPU / ASIC | +0.65% | 高檔整理、未失趨勢 | 偏多，但不是本週最強 beta |</p>
+<p>| Broadcom | AI ASIC / Networking | +5.39% | 趨勢續強 | 可續強，但已偏熱 |</p>
+<p>| Marvell | Networking / Custom silicon | +24.14% | 主升段延續 | 主線最強，但追價風險大 |</p>
+<p>| Arista | High-speed Networking | +7.17% | 強勢整理後再攻 | 對台股網通映射有效 |</p>
+<p>| AMD | CPU / AI | +9.73% | 強於 Intel | CPU 組內的相對強者 |</p>
+<p>| Intel | CPU / Server | -2.51% | 弱於組內同業 | 財報前不宜高估延續性 |</p>
+<p>| Micron | Memory | +5.36% | 多頭延續 | 可續追蹤，但台股純映射不夠集中 |</p>
+<p>| Eaton | Power / Industrial | +8.09% | 穩定上升趨勢 | Datacenter power 主線續強 |</p>
+<p>| Microsoft / Meta / Amazon / Google | AI Software / Cloud | 本週漲跌互見 | earnings 前等待 | 不看短線股價，看 capex 指引 |</p>
+<p>| Apple / Tesla | Consumer / Terminal | 分化 | AAPL 穩、TSLA 弱 | 不列本週主映射 |</p>
+<br>
+<hr>
+<br>
+<h1>Section 3｜美股族群分組</h1>
+<br>
+<h3>A. CPU / General Server</h3>
+<ul>
+<li>代表股：Intel、AMD</li>
+<li>本週觀察：AMD 明顯強於 Intel，代表 CPU / General Server 並非沒有需求，而是市場給了更高權重給能連到 AI 的那一側。</li>
+<li>下週看法：<strong>中性偏多，但只能列次主線。</strong></li>
+<li>產業關鍵句：<strong>General Server 有復甦，但資金話語權仍在 AI Server。</strong></li>
+<li>風險點：Intel earnings 若偏弱，整個 CPU 組會被拖累。</li>
+</ul>
+<br>
+<h3>B. AI GPU / ASIC / High-speed Networking</h3>
+<ul>
+<li>代表股：Nvidia、Broadcom、Marvell、Arista</li>
+<li>本週觀察：SOX 週漲 +8.03%，其中 Marvell +24.14%，Broadcom +5.39%，Arista +7.17%；市場交易重心持續往 custom silicon、network fabric、rack-level integration 移動。</li>
+<li>下週看法：<strong>仍是最強主線，也是最值得映射到台股的第一順位。</strong></li>
+<li>產業關鍵句：<strong>AI 基建已經從「買 GPU」變成「整個 rack stack 一起買」。</strong></li>
+<li>風險點：估值與追價風險很高，強股一旦失速，台股高位股跌幅也會很大。</li>
+</ul>
+<br>
+<h3>C. Memory / Storage</h3>
+<ul>
+<li>代表股：Micron</li>
+<li>本週觀察：Micron 週漲 +5.36%，AI memory 緊張與高頻寬需求敘事仍延續。</li>
+<li>下週看法：<strong>可列中高延續主線，但台股本次核心池沒有最純的 HBM / memory 映射股，因此只列次映射。</strong></li>
+<li>產業關鍵句：<strong>AI 正把記憶體從 cyclical 變成帶有稀缺性溢價的資產。</strong></li>
+<li>風險點：一旦市場預期供給鬆動，記憶體股修正速度通常很快。</li>
+</ul>
+<br>
+<h3>D. Passive / Power / Industrial</h3>
+<ul>
+<li>代表股：Vishay、VPG、Eaton、Amphenol</li>
+<li>本週觀察：VPG +12.48%、ETN +8.09%，Power / Industrial 中與 datacenter 關聯度高的名字繼續強；一般工業仍偏平。</li>
+<li>下週看法：<strong>可列保留主線，但只映射 AI datacenter power / rack / connector，不映射一般工控。</strong></li>
+<li>產業關鍵句：<strong>AI server 不只吃算力，也吃更多電、更多散熱、更多連接。</strong></li>
+<li>風險點：若 hyperscaler 建置時程遞延，power / infrastructure 鏈通常會晚一步補跌。</li>
+</ul>
+<br>
+<h3>E. AI Software / Cloud Capex</h3>
+<ul>
+<li>代表股：Microsoft、Meta、Amazon、Google、Cloudflare、Palantir</li>
+<li>本週觀察：股價表現本週不算強，但這條線的真正重點不在股價，而在 4/30 earnings 對 capex 的指引。</li>
+<li>下週看法：<strong>延續性仍高，且仍必須映射到台股 ODM / 網通 / 散熱。</strong></li>
+<li>產業關鍵句：<strong>Cloud capex 才是台股 AI 硬體鏈最上游的訂單來源。</strong></li>
+<li>風險點：若 Big Tech 對 capex ROI 轉保守，高位台股 AI 股會同步去化估值。</li>
+</ul>
+<br>
+<h3>F. Consumer / Terminal</h3>
+<ul>
+<li>代表股：Apple、Tesla</li>
+<li>本週觀察：AAPL +3.81%、TSLA -3.90%，內部分化很大。</li>
+<li>下週看法：<strong>不列本週主映射。</strong></li>
+<li>產業關鍵句：<strong>終端不是沒有機會，但現在不是市場最願意出高本益比的方向。</strong></li>
+<li>風險點：與台股本週 AI watchlist 的因果鏈太弱。</li>
+</ul>
+<br>
+<hr>
+<br>
+<h1>Section 4｜美股 → 台股映射表</h1>
+<br>
+<h3>4.1 映射表</h3>
+<p>| 美股主線 | 美股代表股 | 台股映射族群 | 台股候選 |</p>
+<p>|---|---|---|---|</p>
+<p>| AI GPU / ASIC / High-speed Networking | Nvidia、Broadcom、Marvell、Arista | 先進製程、網通交換器、AI server ODM、液冷散熱、rack | 2330 台積電、2345 智邦、3231 緯創、6669 緯穎、3017 奇鋐、8210 勤誠 |</p>
+<p>| AI Software / Cloud Capex | Microsoft、Meta、Amazon、Google | ODM、網通、散熱、機殼、電源 | 2382 廣達、3231 緯創、6669 緯穎、2345 智邦、3017 奇鋐、2308 台達電、8210 勤誠 |</p>
+<p>| Datacenter Power / Infrastructure | Eaton、Amphenol、VPG | 電源、機殼、配電、連接與系統整合 | 2308 台達電、8210 勤誠 |</p>
+<p>| Memory / Storage | Micron | 台灣記憶體 / 模組 / 材料 | ⚠ 本週核心 watchlist 無足夠強的純映射標的，建議先保留觀察 |</p>
+<p>| CPU / General Server | AMD、Intel | 一般伺服器 ODM / server board | 2382 廣達、3231 緯創（但權重低於 AI server 映射） |</p>
+<br>
+<h3>4.2 本週最值得映射的 3 條主線</h3>
+<p>1. <strong>AI GPU / ASIC / High-speed Networking → 2330 / 2345 / 3231 / 6669 / 3017 / 8210</strong></p>
+<p>2. <strong>AI Software / Cloud Capex → 2382 / 3231 / 6669 / 2345 / 3017 / 2308</strong></p>
+<p>3. <strong>Datacenter Power / Infrastructure → 2308 / 8210</strong></p>
+<br>
+<h3>4.3 不建議映射的主線與原因</h3>
+<ul>
+<li><strong>Consumer / Terminal</strong>：與本週台股 AI watchlist 關聯太弱。</li>
+<li><strong>純 Memory 映射</strong>：美股主線成立，但台股本週缺乏夠強且夠乾淨的對應股。</li>
+<li><strong>General Server 單獨映射</strong>：需求不差，但市場估值溢價明顯偏向 AI server，而非一般 server。</li>
+</ul>
+<br>
+<h3>4.4 映射因果鏈</h3>
+<ul>
+<li><strong>AI GPU / ASIC / Networking</strong>：美股 AI 晶片與高速互連需求升溫 → 台股受惠於先進製程 / 網通 / AI server 整機與液冷 → <strong>2330 / 2345 / 3231 / 6669 / 3017</strong></li>
+<li><strong>AI Software / Cloud Capex</strong>：hyperscaler 持續投資 AI capex → 台股受惠於 ODM / 網通 / 散熱 / power / rack 出貨能見度提升 → <strong>2382 / 3231 / 6669 / 2308 / 8210 / 3017</strong></li>
+<li><strong>Datacenter Power / Infrastructure</strong>：AI server 功耗與機櫃整合需求上升 → 台股受惠於 power shelf、PSU、rack / chassis、系統配電 → <strong>2308 / 8210</strong></li>
+</ul>
+<br>
+<hr>
+<br>
+<h1>Section 5｜台股第一輪過濾（主線正確性）</h1>
+<br>
+<h3>5.1 第一輪保留名單</h3>
+<p>| 代號 | 名稱 | 對應美股主線 | 近期催化 | 保留原因 |</p>
+<p>|---|---|---|---|---|</p>
+<p>| 2330 | 台積電 | AI GPU / ASIC / Networking | AI chip 先進製程與 CoWoS 需求延續 | 台股所有 AI 映射的最上游核心受惠股 |</p>
+<p>| 3231 | 緯創 | AI Software / Cloud Capex、AI server | AI server 出貨與雲端客戶拉貨延續 | 結構最接近可執行的 pullback setup |</p>
+<p>| 2382 | 廣達 | AI Software / Cloud Capex、AI server | AI server ODM 需求持續 | 主線正確，且位置相對其他高位股舒服 |</p>
+<p>| 6669 | 緯穎 | AI GPU / Cloud ODM | AI server / cloud 專案延續 | 基本面最強之一，但股價已過熱 |</p>
+<p>| 2345 | 智邦 | AI Networking | 800G / 1.6T / AI datacenter switch | 真正受惠 networking，不是純題材 |</p>
+<p>| 3017 | 奇鋐 | AI cooling | 液冷滲透率與 AI server 散熱需求 | 主線明確，但本週已轉高位追價區 |</p>
+<p>| 8210 | 勤誠 | Datacenter rack / chassis | AI 機櫃 / 機殼需求延續 | 與美股 rack integration 因果鏈清楚 |</p>
+<p>| 2308 | 台達電 | Datacenter Power | AI datacenter power / PSU / 配電需求 | Power 主線最純台股核心股之一 |</p>
+<p>| 3324 | 雙鴻 | AI cooling | 散熱需求提升 | 主線正確，但位置與節奏不如奇鋐 |</p>
+<br>
+<h3>5.2 第一輪剔除名單</h3>
+<p>| 代號 | 名稱 | 剔除原因 |</p>
+<p>|---|---|---|</p>
+<p>| 2376 | 技嘉 | 真 AI，但本輪映射純度不如 ODM / 網通 / 散熱 / power 核心股，且主線位階與資金辨識度較次級 |</p>
+<p>| 6282 | 康舒 | 與 AI power 有關，但近期股價轉弱，較像題材延伸而非核心受惠鏈 |</p>
+<p>| 記憶體族群 | - | 美股記憶體主線成立，但台股本週無足夠乾淨且強勢的映射標的 |</p>
+<p>| Consumer 供應鏈 | - | 與本輪 AI infra 主線無直接因果鏈 |</p>
+<br>
+<hr>
+<br>
+<h1>Section 6｜台股第二輪精篩（M.E.T.S. / M.E.T.A.）</h1>
+<br>
+<h3>6.1 精篩結果（100 分制）</h3>
+<p>| 代號 | 名稱 | 對應美股主線 | 技術 | RS | 基本面 | 籌碼 | 總分 | 等級 |</p>
+<p>|---|---|---|---:|---:|---:|---:|---:|---|</p>
+<p>| 3231 | 緯創 | AI Software / Cloud Capex、AI server | 32 | 22 | 18 | 17 | <strong>89</strong> | <strong>A</strong> |</p>
+<p>| 2330 | 台積電 | AI GPU / ASIC / Networking | 31 | 22 | 19 | 17 | <strong>89</strong> | <strong>A</strong> |</p>
+<p>| 2382 | 廣達 | AI Software / Cloud Capex、AI server | 30 | 15 | 18 | 12 | <strong>75</strong> | <strong>B+</strong> |</p>
+<p>| 3017 | 奇鋐 | AI cooling | 24 | 23 | 18 | 13 | <strong>78</strong> | <strong>B+</strong> |</p>
+<p>| 8210 | 勤誠 | Rack / chassis | 21 | 23 | 16 | 17 | <strong>77</strong> | <strong>B+</strong> |</p>
+<p>| 2308 | 台達電 | Datacenter Power | 25 | 22 | 18 | 12 | <strong>77</strong> | <strong>B+</strong> |</p>
+<p>| 6669 | 緯穎 | AI server / Cloud ODM | 16 | 25 | 19 | 14 | <strong>74</strong> | <strong>B</strong> |</p>
+<p>| 2345 | 智邦 | AI Networking | 24 | 17 | 18 | 12 | <strong>71</strong> | <strong>B</strong> |</p>
+<p>| 3324 | 雙鴻 | AI cooling | 18 | 20 | 17 | 13 | <strong>68</strong> | <strong>B</strong> |</p>
+<br>
+<h3>6.2 重點解讀</h3>
+<ul>
+<li><strong>3231 緯創</strong>：本輪最完整的 M.E.T.A. 候選。價格仍貼近 10MA / 20MA 帶狀區，且本週外資 / 投信合計偏多。</li>
+<li><strong>2330 台積電</strong>：分數很高，但要特別注意目前現價已高於不追價區；A 級成立不代表現在就能追，只代表它是最值得等回測的核心股。</li>
+<li><strong>2382 廣達</strong>：主線正確、位置也不差，但相對強度本週明顯輸給高 beta AI 股，因此先列 B+。</li>
+<li><strong>3017 / 8210 / 2308</strong>：都是真主線受惠股，但共同問題是<strong>距離 20MA 太遠</strong>，適合列突破追蹤或等待更深整理。</li>
+<li><strong>6669 / 2345 / 3324</strong>：都可能續強，但目前更像「強股觀察」而非低風險進場點。</li>
+</ul>
+<br>
+<hr>
+<br>
+<h1>Section 7｜A 級完整 Plan + B 級觀察表</h1>
+<br>
+<h3>7.1 A級｜下週核心觀察</h3>
+<br>
+<h4>1. 3231 緯創</h4>
+<ul>
+<li>對應美股：Microsoft / Amazon / Google / Nvidia</li>
+<li>對應主線：AI Software / Cloud Capex → AI server ODM</li>
+<li>入選原因：<strong>本輪 AI 主線中，少數仍貼近 10MA / 20MA、且法人同步偏多的可執行 setup。</strong></li>
+<li>型態：平台整理後回測 10MA / 20MA</li>
+<li>結構評估：強</li>
+<li><strong>M.E.T.A. 區間：132.9 ~ 138.3</strong></li>
+<li><strong>突破買點：147.5</strong></li>
+<li><strong>拉回買點：133.0 ~ 138.2</strong></li>
+<li><strong>不追價區：142.4 以上不追</strong></li>
+<li><strong>停損：128.0</strong></li>
+<li><strong>第一目標：148.0</strong></li>
+<li><strong>第二目標：155.0</strong></li>
+<li><strong>M.E.T.A. 確認項：</strong></li>
+</ul>
+<p>  - [x] 10MA 支撐</p>
+<p>  - [x] 20MA 支撐（月線乖離 < +5%）</p>
+<p>  - [x] 趨勢線 / 通道下緣</p>
+<p>  - [x] 量縮確認（本週五量能明顯收斂）</p>
+<p>  - [x] 大盤拉回個股不破位</p>
+<p>  - [x] 法人仍站多方</p>
+<ul>
+<li>操作備註：只在 133~138 區間分批承接；若直接跳空過 147.5 但量價不協調，不追第二根。</li>
+</ul>
+<br>
+<h4>2. 2330 台積電</h4>
+<ul>
+<li>對應美股：Nvidia / Broadcom / Marvell / AMD</li>
+<li>對應主線：AI GPU / ASIC / Networking 上游先進製程</li>
+<li>入選原因：<strong>台股 AI 主線最上游核心，若下週高位股出現輪動，資金有機會回流到最核心的製程龍頭。</strong></li>
+<li>型態：趨勢續強後等待回測</li>
+<li>結構評估：強</li>
+<li><strong>M.E.T.A. 區間：1996 ~ 2060</strong></li>
+<li><strong>突破買點：2202</strong></li>
+<li><strong>拉回買點：1996 ~ 2060</strong></li>
+<li><strong>不追價區：2122 以上不追</strong></li>
+<li><strong>停損：1940</strong></li>
+<li><strong>第一目標：2200</strong></li>
+<li><strong>第二目標：2280</strong></li>
+<li><strong>M.E.T.A. 確認項：</strong></li>
+</ul>
+<p>  - [x] 前高壓力轉支撐（flip）</p>
+<p>  - [x] 10MA 支撐</p>
+<p>  - [x] 趨勢線 / 通道下緣</p>
+<p>  - [x] 大盤拉回個股不破位</p>
+<p>  - [x] 法人仍站多方</p>
+<ul>
+<li>操作備註：A 級成立，但<strong>現價已高於不追價區</strong>；只能等回測，不可因為分數高而直接追價。</li>
+</ul>
+<br>
+<h3>7.2 B級｜條件尚未完全成熟</h3>
+<p>| 代號 | 名稱 | 等級 | 對應主線 | 缺什麼條件 | 觀察重點 |</p>
+<p>|---|---|---|---|---|---|</p>
+<p>| 2382 | 廣達 | B+ | AI server ODM | RS 不夠強，仍需確認資金是否回流主流 ODM | 309 ~ 324 區間能否守穩且量縮 |</p>
+<p>| 3017 | 奇鋐 | B+ | AI cooling | 結構太陡、離月線太遠 | 只看 2975 帶量突破，或等更深 pullback |</p>
+<p>| 8210 | 勤誠 | B+ | Rack / chassis | 價格已遠離 M.E.T.A. 區，追價風險高 | 1222 突破是否有效；若回跌失守 1130 轉弱 |</p>
+<p>| 2308 | 台達電 | B+ | Datacenter Power | 位階偏高、外資本週賣超 | 2136 帶量突破才追，否則等回測 1900 附近 |</p>
+<p>| 6669 | 緯穎 | B | AI server / Cloud ODM | 過熱，與 20MA 乖離過大 | 只觀察 4596 突破後量價是否健康 |</p>
+<p>| 2345 | 智邦 | B | AI Networking | 高檔波動大，風報比不佳 | 2273 突破才有續攻訊號，否則不硬追 |</p>
+<p>| 3324 | 雙鴻 | B | AI cooling | 節奏慢於奇鋐，且結構尚未完全收斂 | 先看能否在 1005 ~ 1078 上方重新整理成平台 |</p>
+<br>
+<h3>7.3 B+ / B 參考價位表</h3>
+<p>| 代號 | 名稱 | 等級 | Breakout 買點 | Pullback 買點 | 不追價區 | 停損 | 第一目標 | 第二目標 |</p>
+<p>|---|---|---|---:|---:|---:|---:|---:|---:|</p>
+<p>| 2382 | 廣達 | B+ | 348.4 | 309.0 ~ 323.7 | 333.4 以上不追 | 303.0 | 342.0 | 359.0 |</p>
+<p>| 3017 | 奇鋐 | B+ | 2975.0 | ⚠ 不建議深追 | 2627.0 以上不追 | 2800.0 | 3270.0 | 3520.0 |</p>
+<p>| 8210 | 勤誠 | B+ | 1222.0 | ⚠ 不建議硬接 | 1075.0 以上不追 | 1130.0 | 1344.0 | 1440.0 |</p>
+<p>| 2308 | 台達電 | B+ | 2136.0 | 1715.0 ~ 1896.0（僅深回檔才考慮） | 1953.0 以上不追 | 1960.0 | 2308.0 | 2495.0 |</p>
+<p>| 6669 | 緯穎 | B | 4596.0 | ⚠ 只等更深整理 | 4197.0 以上不追 | 4250.0 | 4976.0 | 5291.0 |</p>
+<p>| 2345 | 智邦 | B | 2273.0 | ⚠ 不建議在高位硬接 | 2099.0 以上不追 | 2050.0 | 2384.0 | 2573.0 |</p>
+<p>| 3324 | 雙鴻 | B | 1227.0 | 1005.0 ~ 1078.0 | 1110.0 以上不追 | 985.0 | 1329.0 | 1414.0 |</p>
+<br>
+<hr>
+<br>
+<h1>Section 8｜M.E.T.A. 檢查清單與定義</h1>
+<br>
+<h3>M.E.T.A. = Multiple Edge Trading Area</h3>
+<p>| 字母 | 意義 | 核心說明 |</p>
+<p>|---|---|---|</p>
+<p>| M（Multiple） | 多重優勢 | 不做單一訊號交易，至少 3 個 Edge 重疊才成立 |</p>
+<p>| E（Edge） | 優勢來源 | MA、flip、趨勢線、量縮、法人、抗跌都屬 Edge |</p>
+<p>| T（Trading） | 可交易 | 必須能給出買點、停損、目標，而不是只寫研究心得 |</p>
+<p>| A（Area） | 區域 | MA 是帶狀區，不是精準到 0.5 元的神奇價位 |</p>
+<br>
+<h3>本週實務結論</h3>
+<ul>
+<li>A 級不等於現價可追；A 只代表 <strong>等回到交易區時值得優先做</strong>。</li>
+<li>如果股價已高於 <strong>M.E.T.A. 區上緣 × 1.03</strong>，即使基本面再強，也只能降成「等拉回 / 等突破」。</li>
+<li>本週最常見的失敗原因不是主線錯，而是 <strong>離區太遠、風報比太差</strong>。</li>
+</ul>
+<br>
+<hr>
+<br>
+<h1>Section 9｜風控與出場規則</h1>
+<br>
+<h3>單筆規則</h3>
+<ul>
+<li>單筆最大風險：0.5% ~ 1% 總資金</li>
+<li>若價格離 M.E.T.A. 區超過 +3%，<strong>不追</strong></li>
+<li>若回測無量縮，不提早抄底</li>
+<li>跌破 M.E.T.A. 區且收不回，直接認錯</li>
+</ul>
+<br>
+<h3>獲利處理</h3>
+<ul>
+<li>+10% ~ +15%：先減碼 1/3</li>
+<li>若沿 10MA / 20MA 續強：核心部位續抱</li>
+<li>爆量長黑或跌破關鍵均線：轉保守</li>
+</ul>
+<br>
+<h3>市場條件切換</h3>
+<ul>
+<li>若 4/30 Big Tech earnings 對 capex 保守：全面降低 AI 鏈進攻性</li>
+<li>若台積電失守 1996~2060 回測區：台股整體進攻力要降一級</li>
+<li>若 AI 周邊股輪動加速：只做 A 級或最貼近 pullback 區的 B+</li>
+</ul>
+<br>
+<hr>
+<br>
+<h1>Section 10｜下週行動清單</h1>
+<br>
+<h3>可執行</h3>
+<ul>
+<li><strong>3231 緯創</strong>：唯一最接近標準 M.E.T.A. pullback 區、且籌碼仍偏多的核心股</li>
+</ul>
+<br>
+<h3>只等拉回</h3>
+<ul>
+<li><strong>2330 台積電</strong>：A 級，但現價高於不追價區，只能等 1996 ~ 2060 回測</li>
+<li><strong>2382 廣達</strong>：主線對，位置也還可以，等 309 ~ 324 區量縮承接</li>
+</ul>
+<br>
+<h3>只等突破</h3>
+<ul>
+<li><strong>3017 奇鋐</strong>：2975 帶量突破再看</li>
+<li><strong>8210 勤誠</strong>：1222 帶量突破再看</li>
+<li><strong>2308 台達電</strong>：2136 帶量突破再看</li>
+<li><strong>6669 緯穎</strong>：4596 有效突破再看，不做高位亂接</li>
+<li><strong>2345 智邦</strong>：2273 有效突破再看</li>
+</ul>
+<br>
+<h3>先不要碰</h3>
+<ul>
+<li><strong>3324 雙鴻</strong>：還在追趕段，結構不如奇鋐清楚</li>
+<li><strong>6282 康舒</strong>：題材延伸但不是本輪核心主線，且本週轉弱</li>
+<li><strong>Consumer / 一般工業延伸題材</strong>：與本輪主線因果鏈不夠直接</li>
+</ul>
+<br>
+<h3>週一優先看盤名單</h3>
+<p>1. 3231 緯創</p>
+<p>2. 2330 台積電</p>
+<p>3. 2382 廣達</p>
+<p>4. 3017 奇鋐</p>
+<p>5. 8210 勤誠</p>
+<br>
+<h3>下週 watchlist</h3>
+<ul>
+<li>A級：3231 緯創、2330 台積電</li>
+<li>B級：2382 廣達、3017 奇鋐、8210 勤誠、2308 台達電、6669 緯穎、2345 智邦、3324 雙鴻</li>
+</ul>
+<br>
+<hr>
+<br>
+<h1>Section 11｜一句話結論</h1>
+<br>
+<p><strong>下週不是追最強，而是只做「美股主線仍強、台股映射清楚、且價格願意回到 M.E.T.A. 交易區」的少數 AI 核心股；名單可以很多，真正可出手的其實只有 1~3 檔。</strong></p>
+<br>
+<p>[WEEKLY_WATCHLIST_JSON_START]</p>
+<p>{</p>
+<p>  "report_date": "2026-04-24",</p>
+<p>  "candidates": [</p>
+<p>    {</p>
+<p>      "code": "3231",</p>
+<p>      "name": "緯創",</p>
+<p>      "grade": "A",</p>
+<p>      "action": "pullback",</p>
+<p>      "entry_ref": 135.6,</p>
+<p>      "stop_loss": 128.0,</p>
+<p>      "target": 148.0</p>
+<p>    },</p>
+<p>    {</p>
+<p>      "code": "2330",</p>
+<p>      "name": "台積電",</p>
+<p>      "grade": "A",</p>
+<p>      "action": "pullback",</p>
+<p>      "entry_ref": 2028.0,</p>
+<p>      "stop_loss": 1940.0,</p>
+<p>      "target": 2200.0</p>
+<p>    },</p>
+<p>    {</p>
+<p>      "code": "2382",</p>
+<p>      "name": "廣達",</p>
+<p>      "grade": "B+",</p>
+<p>      "action": "pullback",</p>
+<p>      "entry_ref": 316.3,</p>
+<p>      "stop_loss": 303.0,</p>
+<p>      "target": 342.0</p>
+<p>    },</p>
+<p>    {</p>
+<p>      "code": "3017",</p>
+<p>      "name": "奇鋐",</p>
+<p>      "grade": "B+",</p>
+<p>      "action": "breakout",</p>
+<p>      "entry_ref": 2975.0,</p>
+<p>      "stop_loss": 2800.0,</p>
+<p>      "target": 3270.0</p>
+<p>    },</p>
+<p>    {</p>
+<p>      "code": "8210",</p>
+<p>      "name": "勤誠",</p>
+<p>      "grade": "B+",</p>
+<p>      "action": "breakout",</p>
+<p>      "entry_ref": 1222.0,</p>
+<p>      "stop_loss": 1130.0,</p>
+<p>      "target": 1344.0</p>
+<p>    },</p>
+<p>    {</p>
+<p>      "code": "2308",</p>
+<p>      "name": "台達電",</p>
+<p>      "grade": "B+",</p>
+<p>      "action": "breakout",</p>
+<p>      "entry_ref": 2136.0,</p>
+<p>      "stop_loss": 1960.0,</p>
+<p>      "target": 2308.0</p>
+<p>    },</p>
+<p>    {</p>
+<p>      "code": "6669",</p>
+<p>      "name": "緯穎",</p>
+<p>      "grade": "B",</p>
+<p>      "action": "breakout",</p>
+<p>      "entry_ref": 4596.0,</p>
+<p>      "stop_loss": 4250.0,</p>
+<p>      "target": 4976.0</p>
+<p>    },</p>
+<p>    {</p>
+<p>      "code": "2345",</p>
+<p>      "name": "智邦",</p>
+<p>      "grade": "B",</p>
+<p>      "action": "breakout",</p>
+<p>      "entry_ref": 2273.0,</p>
+<p>      "stop_loss": 2050.0,</p>
+<p>      "target": 2384.0</p>
+<p>    },</p>
+<p>    {</p>
+<p>      "code": "3324",</p>
+<p>      "name": "雙鴻",</p>
+<p>      "grade": "B",</p>
+<p>      "action": "monitor",</p>
+<p>      "entry_ref": 1041.5,</p>
+<p>      "stop_loss": 985.0,</p>
+<p>      "target": 1329.0</p>
+<p>    }</p>
+<p>  ]</p>
+<p>}</p>
+<p>[WEEKLY_WATCHLIST_JSON_END]</p>
+<br>
+  </div>
+  <footer>美股 → 台股週報系統 · 由 Hermes 自動生成 · 非投資建議</footer>
+</body>
+</html>
